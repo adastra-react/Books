@@ -1,8 +1,7 @@
-# React Budget App
+# React Books App
 
 To run:
 
 ```
-npm install 
-npm start 
+Everything is in the app.js file
 ```
