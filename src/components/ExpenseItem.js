@@ -1,26 +1,89 @@
-import React, { useContext } from 'react';
-import { TiDelete } from 'react-icons/ti';
-import { AppContext } from '../context/AppContext';
+// import React, { useContext } from 'react';
+// import { TiDelete } from 'react-icons/ti';
+// import { AppContext } from '../context/AppContext';
 
-const ExpenseItem = (props) => {
-	const { dispatch } = useContext(AppContext);
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
+// import Paper from '@mui/material/Paper';
 
-	const handleDeleteExpense = () => {
-		dispatch({
-			type: 'DELETE_EXPENSE',
-			payload: props.id,
-		});
-	};
+// function createData(name, calories, fat, carbs, protein) {
+// 	return { name, calories, fat, carbs, protein };
+//   }
+  
+//   const rows = [
+// 	createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
+// 	createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
+// 	createData('Eclair', 262, 16.0, 24, 6.0),
+// 	createData('Cupcake', 305, 3.7, 67, 4.3),
+// 	createData('Gingerbread', 356, 16.0, 49, 3.9),
+//   ];
 
-	return (
-		<li class='list-group-item d-flex justify-content-between align-items-center'>
-			{props.name}
-			<div>
-				<span class='badge badge-primary badge-pill mr-3'>£{props.cost}</span>
-				<TiDelete size='1.5em' onClick={handleDeleteExpense} />
-			</div>
-		</li>
-	);
-};
+// const ExpenseItem = (props) => {
+// 	const { dispatch } = useContext(AppContext);
 
-export default ExpenseItem;
+// 	const handleDeleteExpense = () => {
+// 		dispatch({
+// 			type: 'DELETE_EXPENSE',
+// 			payload: props.id,
+// 		});
+// 	};
+
+// 	return (
+// 	// 	<TableContainer component={Paper}>
+// 	// 	<Table sx={{ minWidth: 650 }} aria-label="simple table">
+// 	// 	  <TableHead>
+// 	// 		<TableRow>
+// 	// 		  <TableCell>Dessert (100g serving)</TableCell>
+// 	// 		  <TableCell align="right">Calories</TableCell>
+// 	// 		  <TableCell align="right">Fat&nbsp;(g)</TableCell>
+// 	// 		  <TableCell align="right">Carbs&nbsp;(g)</TableCell>
+// 	// 		  <TableCell align="right">Protein&nbsp;(g)</TableCell>
+// 	// 		</TableRow>
+// 	// 	  </TableHead>
+// 	// 	  <TableBody>
+// 	// 		{rows.map((row) => (
+// 	// 		  <TableRow
+// 	// 			key={row.name}
+// 	// 			sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+// 	// 		  >
+// 	// 			<TableCell component="th" scope="row">
+// 	// 			  {row.name}
+// 	// 			</TableCell>
+// 	// 			<TableCell align="right">{row.calories}</TableCell>
+// 	// 			<TableCell align="right">{row.fat}</TableCell>
+// 	// 			<TableCell align="right">{row.carbs}</TableCell>
+// 	// 			<TableCell align="right">{row.protein}</TableCell>
+// 	// 		  </TableRow>
+// 	// 		))}
+// 	// 	  </TableBody>
+// 	// 	</Table>
+// 	//   </TableContainer>
+		
+// 		// <li class='list-group-item d-flex justify-content-between align-items-center'>
+// 		// 	{props.name}
+// 		// 	<div>
+// 		// 		<span class='badge badge-primary badge-pill mr-3'>${props.cost}</span>
+// 		// 		<TiDelete size='1.5em' onClick={handleDeleteExpense} />
+// 		// 	</div>
+// 		// </li>
+
+// 		<TableRow
+// 			key={props.name}
+// 			sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+// 		>
+// 			{/* <TableCell component="th" scope="row">
+// 			{row.name}
+// 			</TableCell> */}
+// 			<TableCell align="right">{props.cos}</TableCell>
+// 			<TableCell align="right">{row.fat}</TableCell>
+// 			<TableCell align="right">{row.carbs}</TableCell>
+// 			<TableCell align="right">{row.protein}</TableCell>
+// 		</TableRow>
+// 	);
+// };
+
+// export default ExpenseItem;
